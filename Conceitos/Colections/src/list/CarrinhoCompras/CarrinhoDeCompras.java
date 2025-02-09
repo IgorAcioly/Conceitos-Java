@@ -10,8 +10,7 @@ public class CarrinhoDeCompras {
 
     //Construtor
     public CarrinhoDeCompras(){
-        this.carrinho= new ArrayList();
-
+        this.carrinho= new ArrayList<>();
     }
 
     //Método Adicionar
