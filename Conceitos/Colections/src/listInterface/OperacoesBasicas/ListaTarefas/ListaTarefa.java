@@ -2,24 +2,26 @@ package list.ListaTarefas;
 
 import java.util.ArrayList;
 import java.util.List;
+import list.ListaTarefas.Tarefa;
 
-public class ListaTarefa {
+
+class ListaTarefa {
 
     //Atributo
-    private List<Tarefa> tarefaList;
+    protected List<Tarefa> tarefaList;
 
     //Construtor
-    public ListaTarefa(){
+    protected ListaTarefa(){
         this.tarefaList = new ArrayList<>();
     }
 
     //****Como não dar erro?
-    public void adicionarTarefa (String descricao){
+    protected void adicionarTarefa (String descricao){
         tarefaList.add(new Tarefa (descricao));
     }
 
     //Método
-    public void removerTarefa(String descricao) {
+    protected void removerTarefa(String descricao) {
         List<Tarefa> tarefasParaRemover = new ArrayList<>();
         if (!tarefaList.isEmpty()) {
             System.out.println(tarefaList);
@@ -35,12 +37,12 @@ public class ListaTarefa {
     }
 
     //Método
-    public int totalTarefas() {
+    protected int totalTarefas() {
         return tarefaList.size();
     }
 
     //Método
-    public void descricoesTarefas() {
+    protected void descricoesTarefas() {
         if (!tarefaList.isEmpty()) {
             System.out.println(tarefaList);
         } else {
@@ -48,7 +50,7 @@ public class ListaTarefa {
         }
 
     }
-    public static void main (String [] args) {
+    protected static void main (String [] args) {
         ListaTarefa listaTarefa = new ListaTarefa();
 
         listaTarefa.adicionarTarefa("Tarefa 1");
