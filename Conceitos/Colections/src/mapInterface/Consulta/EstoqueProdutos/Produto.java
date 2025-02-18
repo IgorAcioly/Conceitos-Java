@@ -1,4 +1,4 @@
-package mapInterface.Consulta;
+package mapInterface.Consulta.EstoqueProdutos;
 
 public class Produto {
     String nome;

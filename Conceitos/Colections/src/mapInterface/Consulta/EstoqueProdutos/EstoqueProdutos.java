@@ -1,6 +1,5 @@
-package mapInterface.Consulta;
+package mapInterface.Consulta.EstoqueProdutos;
 
-import javax.imageio.stream.ImageInputStreamImpl;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
