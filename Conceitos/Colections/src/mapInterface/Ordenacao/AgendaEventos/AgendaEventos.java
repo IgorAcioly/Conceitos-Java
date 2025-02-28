@@ -17,10 +17,10 @@ public class AgendaEventos {
     }
 
     protected void exibirAgenda(){
-        System.out.println(eventosMap);
+        System.out.println("Esta é a agenda de eventos: "+eventosMap);
     }
 
-    protected Map<LocalDate, Evento> obterProximoEvento(){
+    protected Map<LocalDate, Evento> obterProximosEventos(){
         Map<LocalDate,Evento> proximosEventos = new TreeMap<>();
         LocalDate hoje = LocalDate.now();
         if(!eventosMap.isEmpty()){
@@ -38,9 +38,10 @@ public class AgendaEventos {
 
         agenda.adicionarEventos(LocalDate.of(2023,01,25),"Lolapalooza","Metálica");
         agenda.adicionarEventos(LocalDate.of(2025,02,19),"Lolapalooza","Xuxa");
+        agenda.adicionarEventos(LocalDate.of(2026,02,24),"Rock in Rio","Mamonas Assassinas");
 
         agenda.exibirAgenda();
-        System.out.println(agenda.obterProximoEvento());
+        System.out.println("O próximo evento será: "+agenda.obterProximosEventos());
 
     }
 
